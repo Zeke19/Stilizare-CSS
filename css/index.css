@@ -1,0 +1,222 @@
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    padding: 0.8em;
+    font-size: 16px;
+}
+
+h1{
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 1px 1px black;
+}
+
+h1 + p{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+h2{
+    font-size: 1.5em;
+    padding: 0.6em;
+}
+h2+p{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+img{
+   width: 95%;
+}
+
+ul{
+    font-size: 1.5em;
+    list-style: none;
+    padding: 0;
+    
+}
+
+li{
+    margin: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+nav{
+    background-color: rgb(29, 91, 226);
+    padding: 0.75em;
+    min-width: 25%;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+section{
+    min-width: 65%;
+    padding: 0.75em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.non-flex{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+article{
+    max-width: 65%;
+}
+figure {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+}
+
+.interbelic{
+    display: flex;
+    justify-content: space-between;
+}
+
+.interbelic-par{
+    max-width: 60%;
+}
+
+.insterbelic-img{
+    max-width: 30%;
+    margin-top: 1em;
+    max-height: 50%;
+  
+}
+
+#img-marg{
+    margin-top: 0;
+    max-height: 100%;
+    max-width: 100%;
+    
+}
+
+#img-size{
+    max-width: 800px;
+}
+
+#img-sized{
+    max-width: 100%;
+
+}
+
+#imag-sized {
+    max-width: 600px;
+    max-height: 600px;
+    margin: 0 auto;
+}
+
+.active{
+    border-bottom: 2px solid black;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh; 
+}
+
+.table{
+    max-width: 1600px;
+    max-height: 1200px;
+    padding: 20px;
+    
+}
+
+.thead{
+    display: flex;
+    max-width: 100%
+}
+
+.th{
+    background-color: rgb(29, 91, 226);
+    border: none;
+    text-align: center;
+    min-width: 12.5%;
+    min-height: 12.5%;
+    padding: 15px;
+    color: white;
+    font-weight: 700;
+}
+
+.tr {
+    display: flex;
+    max-width: 100%;
+    border-bottom: 1px solid grey;
+}
+
+.td{
+    text-align: center;
+  min-width: 12.5%;
+  min-height: 12.5%;
+  padding: 10px;
+    margin: 0;
+}
+
+
+a:hover{
+    color: white;
+}
+
+.active:hover{
+    border-bottom: 1px solid white;
+}
+
+@media (max-width: 1000px){
+.container{
+    display: flex;
+    flex-direction: column;
+}
+article {
+    max-width: 90%;
+}
+
+.interbelic{
+    display: flex;
+    flex-direction: column;
+}
+
+.interbelic-par{
+    text-align: left;
+    max-width: 90%;
+}
+section {
+    display: flex;
+    flex-direction: column;
+}
+.insterbelic-img{
+    max-width: 90%;
+    margin-top: 1em;
+    max-height: 70%;
+  
+}
+.table{
+    font-size: 0.5em;
+
+}
+}
